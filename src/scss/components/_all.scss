@@ -1,0 +1,11 @@
+@import './header';
+@import './button';
+@import './book-block';
+
+.container {
+  display: block;
+  max-width: 100%;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}

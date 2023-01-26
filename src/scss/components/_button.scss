@@ -1,0 +1,38 @@
+@import '../variables';
+.book__btn {
+  display: inline-block;
+  background-color: $green;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 14px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: darken($green, 8%);
+  }
+
+  &:active {
+    background-color: darken($green, 12%);
+    transform: translateY(1px);
+  }
+}
+.books__btn {
+  background-color: $purple;
+  padding: 1rem;
+}
+.basket__btn {
+  background-color: $green;
+  padding: 1rem;
+}
+.delete__btn {
+  padding: 1rem;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+}
+.change-btn {
+  background-color: #fff685;
+  padding: 1rem;
+  margin: 16px;
+}

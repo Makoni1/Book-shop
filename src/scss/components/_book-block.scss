@@ -1,0 +1,117 @@
+@import '../variables';
+
+.book__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.book__card {
+  margin: 30px;
+}
+.book-img {
+  height: 350px;
+  max-width: 222px;
+}
+.book__title {
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 14px;
+}
+.book__author {
+  font-weight: 400;
+  font-size: 1em;
+  margin-top: 14px;
+}
+.book__price {
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 14px;
+  color: $black;
+}
+
+//basket
+.basket__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+table {
+  padding: 1rem;
+}
+th {
+  padding: 1rem;
+  margin: 1rem;
+}
+td {
+  padding: 1rem;
+  border: 1px solid;
+}
+.total-sum {
+  font-weight: 700;
+}
+.basket-image {
+  width: 60px;
+  height: 70px;
+}
+
+@media screen and (max-width: 800px) {
+  .book__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wrapper {
+    overflow-x: scroll;
+  }
+
+  .book-img {
+    height: 249px;
+    max-width: 168px;
+  }
+  .book__btn {
+    padding: 10px 20px;
+    width: 74%;
+
+    margin-top: 10px;
+  }
+  .book__author {
+    font-size: 14px;
+  }
+
+  .basket__btn {
+    padding: 30px;
+  }
+  .change-btn {
+    padding: 12px;
+    margin: 12px;
+  }
+  td {
+    padding: 8px;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .table td {
+    margin: 0 -1px -1px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .book__container {
+    display: flex;
+    justify-content: center;
+  }
+  .table td {
+    width: 100%;
+  }
+}
